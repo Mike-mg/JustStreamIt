@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="static/js/script.js" defer></script>
+<!--    <script src="static/js/carousel.js" defer></script>-->
+</head>
+
+<body id="home">
+<header>
+</header>
+<nav>
+    <img src="img/logo_juststream_it.png" alt=""/>
+    <a href="#home">Acceuil</a>
+    <a href="#best_ratings">Meilleur score</a>
+    <a href="#action">Action</a>
+    <a href="#sci-fi">Science Fiction</a>
+    <a href="#crime">Crime</a>
+</nav> <!-- END nav-bar -->
+
+<section id="the_best_ranting_content"></section>
+<!-- END best_movie_section -->
+
+
+<!--<div>
+    <div id="my_generic_modal" class="generic_modal">
+        <div class="generic_modal_content">
+            <div id="generic_modal_img"><img id="generic_modal_img_img" src="#" alt=""></div>
+            <div id="generic_modal_infos_1">
+                <ul>
+                    <li id="generic_modal_title"></li>
+                    <li id="generic_modal_genre"></li>
+                    <li id="generic_modal_year"></li>
+                    <li id="generic_modal_avg_vote"></li>
+                    <li id="generic_modal_imdb_score"></li>
+                    <li id="generic_modal_duration"></li>
+                    <li id="generic_modal_countries"></li>
+                    <li id="generic_modal_rated"></li>
+                    <li id="generic_modal_writers"></li>
+                    <li id="generic_modal_actors"></li>
+                </ul>
+            </div>
+            <div id="generic_modal_infos_resume">
+                <ul>
+                    <li id="generic_resume"></li>
+                </ul>
+            </div>
+            <span class="generic_modal_close">&times;</span>
+        </div>
+    </div>
+</div>
+
+&lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; CAROUSEL BEST RATING &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
+<div><h1 class="cat_title">Les mieux notées:</h1></div>
+<div class="best_rating">
+    <div class="best_rating_carousel-container">
+        <div class="carousel-inner">
+            <div class="track_best_rating">
+                <div class="card-container">
+                    <div class="card">
+                        <div id="best_rating_0" class="img" data-cat="0" data-id="0"></div>
+                        <div id="best_rating_title_0" class="title"></div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div id="best_rating_1" class="img" data-cat="0" data-id="1"></div>
+                        <div id="best_rating_title_1" class="title"></div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div id="best_rating_2" class="img" data-cat="0" data-id="2"></div>
+                        <div id="best_rating_title_2" class="title"></div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div id="best_rating_3" class="img" data-cat="0" data-id="3"></div>
+                        <div id="best_rating_title_3" class="title"></div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div id="best_rating_4" class="img" data-cat="0" data-id="4"></div>
+                        <div id="best_rating_title_4" class="title"></div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div id="best_rating_5" class="img" data-cat="0" data-id="5"></div>
+                        <div id="best_rating_title_5" class="title"></div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div id="best_rating_6" class="img" data-cat="0" data-id="6"></div>
+                        <div id="best_rating_title_6" class="title"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <button class="best_rating_prev"><i class="fas fa-arrow-left fa-5x"></i></button>
+            <button class="best_rating_next"><i class="fas fa-arrow-right fa-5x"></i></button>
+        </div>
+    </div>
+    <div>
+    </div>
+    &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; END CAROUSEL BEST RATING &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
+    &lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; CAROUSEL ACTION &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
+    <div><h1 class="cat_title">Action:</h1></div>
+    <div class="best_rating">
+        <div class="action_carousel-container">
+            <div class="carousel-inner">
+                <div class="track_action">
+                    <div class="card-container">
+                        <div class="card">
+                            <div id="action_0" class="img" data-cat="1" data-id="0"></div>
+                            <div id="action_title_0" class="title"></div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div id="action_1" class="img" data-cat="1" data-id="1"></div>
+                            <div id="action_title_1" class="title"></div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div id="action_2" class="img" data-cat="1" data-id="2"></div>
+                            <div id="action_title_2" class="title"></div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div id="action_3" class="img" data-cat="1" data-id="3"></div>
+                            <div id="action_title_3" class="title"></div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div id="action_4" class="img" data-cat="1" data-id="4"></div>
+                            <div id="action_title_4" class="title"></div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div id="action_5" class="img" data-cat="1" data-id="5"></div>
+                            <div id="action_title_5" class="title"></div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div id="action_6" class="img" data-cat="1" data-id="6"></div>
+                            <div id="action_title_6" class="title"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <button class="action_prev"><i class="fas fa-arrow-left fa-5x"></i></button>
+                <button class="action_next"><i class="fas fa-arrow-right fa-5x"></i></button>
+            </div>
+        </div>
+        <div>
+        </div>
+        &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; END CAROUSEL ACTION &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
+        &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; CAROUSEL SCI-FI &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
+        <div><h1 class="cat_title">Science-Fiction:</h1></div>
+        <div class="best_rating">
+            <div class="sci_fi_carousel-container">
+                <div class="carousel-inner">
+                    <div class="track_sci_fi">
+                        <div class="card-container">
+                            <div class="card">
+                                <div id="sci-fi_0" class="img" data-cat="2" data-id="0"></div>
+                                <div id="sci-fi_title_0" class="title"></div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <div id="sci-fi_1" class="img" data-cat="2" data-id="1"></div>
+                                <div id="sci-fi_title_1" class="title"></div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <div id="sci-fi_2" class="img" data-cat="2" data-id="2"></div>
+                                <div id="sci-fi_title_2" class="title"></div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <div id="sci-fi_3" class="img" data-cat="2" data-id="3"></div>
+                                <div id="sci-fi_title_3" class="title"></div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <div id="sci-fi_4" class="img" data-cat="2" data-id="4"></div>
+                                <div id="sci-fi_title_4" class="title"></div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <div id="sci-fi_5" class="img" data-cat="2" data-id="4"></div>
+                                <div id="sci-fi_title_5" class="title"></div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <div id="sci-fi_6" class="img" data-cat="2" data-id="6"></div>
+                                <div id="sci-fi_title_6" class="title"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-btn">
+                    <button class="sci_fi_prev"><i class="fas fa-arrow-left fa-5x"></i></button>
+                    <button class="sci_fi_next"><i class="fas fa-arrow-right fa-5x"></i></button>
+                </div>
+            </div>
+            <div>
+            </div>
+            &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; END CAROUSEL SCI-FI &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
+            &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; CAROUSEL CRIME &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
+            <div><h1 class="cat_title">Crime:</h1></div>
+            <div class="best_rating">
+                <div class="crime_carousel-container">
+                    <div class="carousel-inner">
+                        <div class="track_crime">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div id="crime_0" class="img" data-cat="3" data-id="0"></div>
+                                    <div id="crime_title_0" class="title"></div>
+                                </div>
+                            </div>
+                            <div class="card-container">
+                                <div class="card">
+                                    <div id="crime_1" class="img" data-cat="3" data-id="1"></div>
+                                    <div id="crime_title_1" class="title"></div>
+                                </div>
+                            </div>
+                            <div class="card-container">
+                                <div class="card">
+                                    <div id="crime_2" class="img" data-cat="3" data-id="2"></div>
+                                    <div id="crime_title_2" class="title"></div>
+                                </div>
+                            </div>
+                            <div class="card-container">
+                                <div class="card">
+                                    <div id="crime_3" class="img" data-cat="3" data-id="3"></div>
+                                    <div id="crime_title_3" class="title"></div>
+                                </div>
+                            </div>
+                            <div class="card-container">
+                                <div class="card">
+                                    <div id="crime_4" class="img" data-cat="3" data-id="4"></div>
+                                    <div id="crime_title_4" class="title"></div>
+                                </div>
+                            </div>
+                            <div class="card-container">
+                                <div class="card">
+                                    <div id="crime_5" class="img" data-cat="3" data-id="5"></div>
+                                    <div id="crime_title_5" class="title"></div>
+                                </div>
+                            </div>
+                            <div class="card-container">
+                                <div class="card">
+                                    <div id="crime_6" class="img" data-cat="3" data-id="6"></div>
+                                    <div id="crime_title_6" class="title"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-btn">
+                        <button class="crime_prev"><i class="fas fa-arrow-left fa-5x"></i></button>
+                        <button class="crime_next"><i class="fas fa-arrow-right fa-5x"></i></button>
+                    </div>
+                </div>
+                <div>
+                </div>
+                &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; END CAROUSEL CRIME &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<footer>
+
+</footer>
+</body>
+</html>

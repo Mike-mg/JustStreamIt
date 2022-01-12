@@ -55,7 +55,6 @@ async function show_movies(url) {
 
 }
 
-
 async function extract_url_movies_genre(url_api, url_movie) {
     for (let i = 0; i < url_api.length; i++) {
         const response = await fetch(url_api[i]);
@@ -65,6 +64,46 @@ async function extract_url_movies_genre(url_api, url_movie) {
             url_movie.push(base_url + response_json.results[i].id);
         }
     }
+}
+
+async function addElement (url_movie, ul_categorie) {
+    for (let i = 0; i < url_movie.length; i++) {
+        const response = await fetch(url_movie[i]);
+        const response_json = await response.json();
+
+        let new_li = document.createElement('li');
+        let img = `
+
+        <img src=${response_json.image_url} alt="">
+        <a href="#movie_modal">More infos</a>
+
+        <aside id="movie_modal" class="movie_modal">
+            <div class="div_movie_modal">
+                <div class="url_img">
+                    <img src=${response_json.image_url} alt="">
+                </div>
+                <div class="movie_modal_info_content">
+                    <h1><u>Title :</u> hello a tous</h1>
+                    <p><u>Genre :</u> ${response_json.genres}</p>
+                    <p><u>Date published :</u> ${response_json.date_published}</p>
+                    <p><u>Rated :</u> ${response_json.rated}</p>
+                    <p><u>Score Imdb :</u> ${response_json.imdb_score}</p>
+                    <p><u>Directors :</u> ${response_json.directors}</p>
+                    <p><u>Actors :</u><br>${response_json.actors}</p>
+                    <p><u>Duration :</u> ${response_json.duration}min</p>
+                    <p><u>Countries :</u> ${response_json.countries}</p>
+                    <p><u>Box office :</u> ${response_json.budget}$</p>
+                    <p><u>Description :</u><br>${response_json.long_description}</p>
+                    <a href="#" class="modal_close">&times;</a>
+                </div>
+            </div>
+        </aside>`;
+
+
+        new_li.innerHTML = img;
+        document.getElementById(ul_categorie).appendChild(new_li);
+    }
+
 }
 
 async function main() {
@@ -79,7 +118,11 @@ async function main() {
         const response_json = await response.json();
     }
 
-    show_movies(categories_best_ranking[6])
+    show_movies(categories_best_ranking[0]);
+    addElement(categories_best_ranking, "categories_best_ranking_ul");
+    addElement(categories_action, "categories_action_ul");
+    addElement(categories_sci_fi, "categories_sci_fi_ul");
+    addElement(categories_crime, "categories_crime_ul");
 
 }
 

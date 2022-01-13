@@ -170,11 +170,15 @@ nav img {
     margin-left: 20px;
 }
 
-img {
+.img_categorie {
     width: 150px;
     margin-right: 25px;
     margin-bottom: 10px;
-    display: inline-block;
+}
+
+.url_img img {
+    width: 100%;
+    height: 100%;
 }
 
 .categories_best_ranking li {
@@ -182,14 +186,6 @@ img {
     margin-right: 25px;
     margin-bottom: 10px;
     display: inline-block;
-}
-
-#categories_action h1 {
-    font-size: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: White;
 }
 
 .categories_action {
@@ -215,14 +211,6 @@ img {
     display: inline-block;
 }
 
-#categories_sci_fi h1 {
-    font-size: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: White;
-}
-
 .categories_sci_fi {
     margin-top: 150px;
 }
@@ -244,14 +232,6 @@ img {
     margin-left: 20px;
     margin-bottom: 50px;
     display: inline-block;
-}
-
-#categories_crime h1 {
-    font-size: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: White;
 }
 
 .categories_crime {
@@ -328,4 +308,6 @@ img {
     max-width: 500px;
     min-height: 150px;
     margin: 25px;
+    font-size: 16px;
+
 }

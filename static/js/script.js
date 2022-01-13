@@ -74,10 +74,10 @@ async function addElement (url_movie, ul_categorie) {
         let new_li = document.createElement('li');
         let img = `
 
-        <img src=${response_json.image_url} alt="">
-        <a href="#${ul_categorie}${i}">More infos</a>
+        <img class="img_categorie" src=${response_json.image_url} alt="">
+        <a href="#movie_modal${ul_categorie}${i}">More infos</a>
 
-        <aside id="movie_modal" class="movie_modal">
+        <aside id="movie_modal${ul_categorie}${i}" class="movie_modal">
             <div class="div_movie_modal">
                 <div class="url_img">
                     <img src=${response_json.image_url} alt="">
@@ -93,7 +93,7 @@ async function addElement (url_movie, ul_categorie) {
                     <p><u>Duration :</u> ${response_json.duration}min</p>
                     <p><u>Countries :</u> ${response_json.countries}</p>
                     <p><u>Box office :</u> ${response_json.budget}$</p>
-                    <p><u>Description :</u><br>${response_json.long_description}</p>
+                    <p><u>Description :</u><br>${response_json.description}</p>
                     <a href="#" class="modal_close">&times;</a>
                 </div>
             </div>

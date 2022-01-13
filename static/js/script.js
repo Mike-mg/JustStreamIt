@@ -75,7 +75,7 @@ async function addElement (url_movie, ul_categorie) {
         let img = `
 
         <img src=${response_json.image_url} alt="">
-        <a href="#movie_modal">More infos</a>
+        <a href="#${ul_categorie}${i}">More infos</a>
 
         <aside id="movie_modal" class="movie_modal">
             <div class="div_movie_modal">
@@ -83,7 +83,7 @@ async function addElement (url_movie, ul_categorie) {
                     <img src=${response_json.image_url} alt="">
                 </div>
                 <div class="movie_modal_info_content">
-                    <h1><u>Title :</u> hello a tous</h1>
+                    <h1><u>Title :</u> ${response_json.title}</h1>
                     <p><u>Genre :</u> ${response_json.genres}</p>
                     <p><u>Date published :</u> ${response_json.date_published}</p>
                     <p><u>Rated :</u> ${response_json.rated}</p>

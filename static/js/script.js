@@ -106,6 +106,38 @@ async function addElement (url_movie, ul_categorie) {
 
 }
 
+function onclick_next (ul_li_id) {
+
+    let ul_li = document.getElementById(ul_li_id);
+    let margin_init = ul_li.style.marginLeft;
+
+    console.log(margin_init);
+    if (!margin_init) {
+        margin_init = "0px"
+    }
+    margin_init = parseInt(margin_init,10)
+    if (margin_init < 1000 && margin_init != 0) {
+        let total_margin_left = margin_init + 150 + "px";
+        document.getElementById(ul_li_id).style.marginLeft = total_margin_left;
+    }
+
+}
+
+function onclick_previous (ul_li_id) {
+    let ul_li = document.getElementById(ul_li_id);
+    let margin_init = ul_li.style.marginLeft;
+
+    console.log(margin_init);
+    if (!margin_init) {
+        margin_init = "0px"
+    }
+    margin_init = parseInt(margin_init,10)
+    if (margin_init > -600) {
+        let total_margin_left = margin_init - 150 + "px";
+        document.getElementById(ul_li_id).style.marginLeft = total_margin_left;
+    }
+}
+
 async function main() {
 
     await extract_url_movies_genre(allUrls[0], categories_best_ranking);
@@ -123,7 +155,6 @@ async function main() {
     addElement(categories_action, "categories_action_ul");
     addElement(categories_sci_fi, "categories_sci_fi_ul");
     addElement(categories_crime, "categories_crime_ul");
-
 }
 
 

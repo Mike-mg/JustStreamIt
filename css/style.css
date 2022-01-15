@@ -1,8 +1,8 @@
 body {
     padding: 25px;
+    padding-bottom: 200px;
     background: #131416;
     font-family: arial, sans-serif;
-    height: 100vh;
 }
 
 /* ----------------------------- NAV BAR -------------------------------*/
@@ -147,16 +147,34 @@ nav img {
     color: white;
 }
 
-.cat {
-    font-size: 35px;
+.url_img img {
+    width: 300px;
+    height: 100%;
+}
+/*categories_best_ranking*/
+
+.categories_best_ranking{
+    margin-top: 150px;
+}
+
+.categories_best_ranking h1{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-center: center;
+    font-size: 35px;
     color: White;
 }
 
-.categories_best_ranking {
-    margin-top: 150px;
+#categories_best_ranking_ul {
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-center: center;
+}
+
+#categories_best_ranking_ul li{
+    list-style-type: none;
 }
 
 .categories_best_ranking a {
@@ -170,26 +188,35 @@ nav img {
     margin-left: 20px;
 }
 
-.img_categorie {
-    width: 150px;
-    margin-right: 25px;
-    margin-bottom: 10px;
-}
+/*categories_action*/
 
-.url_img img {
-    width: 100%;
-    height: 100%;
-}
-
-.categories_best_ranking li {
-    width: 150px;
-    margin-right: 25px;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.categories_action {
+.categories_action{
     margin-top: 150px;
+}
+
+.categories_action h1{
+    display: flex;
+    justify-content: center;
+    align-center: center;
+    font-size: 35px;
+    color: White;
+}
+
+#categories_action_ul {
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-center: center;
+}
+
+#categories_action_ul_li {
+    padding: 20px;
+
+}
+
+#categories_action_ul li{
+    list-style-type: none;
 }
 
 .categories_action a {
@@ -200,17 +227,128 @@ nav img {
     background: rgba(255, 255, 255);
     border-radius: 15px;
     color: black;
-    margin-left: 20px
+    margin-left: 20px;
 }
 
-.categories_action li {
-    width: 150px;
-    max-height: 90%;
+/*categories_sci_fi*/
+
+.categories_sci_fi{
+    margin-top: 150px;
+}
+
+.categories_sci_fi h1{
+    display: flex;
+    justify-content: center;
+    align-center: center;
+    font-size: 35px;
+    color: White;
+}
+
+#categories_sci_fi_ul {
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-center: center;
+}
+
+#categories_sci_fi_ul li{
+    list-style-type: none;
+}
+
+.categories_sci_fi a {
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px ridge grey;
+    background: rgba(255, 255, 255);
+    border-radius: 15px;
+    color: black;
     margin-left: 20px;
-    margin-bottom: 50px;
+}
+
+/*categories_crime*/
+
+.categories_crime{
+    margin-top: 150px;
+}
+
+.categories_crime h1{
+    display: flex;
+    justify-content: center;
+    align-center: center;
+    font-size: 35px;
+    color: White;
+}
+
+#categories_crime_ul {
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-center: center;
+}
+
+#categories_crime_ul li{
+    list-style-type: none;
+}
+
+.categories_crime a {
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px ridge grey;
+    background: rgba(255, 255, 255);
+    border-radius: 15px;
+    color: black;
+    margin-left: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-center: center;
+
+}
+
+.previous, .next {
+    width:100px;
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    border: 2px ridge grey;
+    background: rgba(255, 255, 255);
+    border-radius: 10px;
+    color: black;
+    align-center: center;
+    margin-top: 50px;
+}
+
+.img_categorie {
+    width: 150px;
+    margin-right: 75px;
+    margin-bottom: 10px;
+}
+
+
+/*.categories_action_ul li {
+    margin-right: 25px;
+    margin-bottom: 10px;
     display: inline-block;
 }
 
+.categories_action_ul{
+    margin-top: 150px;
+}
+
+
+#categories_action_ul {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-center: center;
+}*/
+
+/*
 .categories_sci_fi {
     margin-top: 150px;
 }
@@ -265,7 +403,7 @@ nav img {
     border: 3px ridge grey;
     border-radius: 5px;
     box-shadow: 5px 5px 5px black;
-}
+}*/
 
 .movie_modal {
     visibility: hidden;
@@ -311,3 +449,4 @@ nav img {
     font-size: 16px;
 
 }
+

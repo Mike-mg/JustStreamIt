@@ -83,7 +83,7 @@ async function addElement (url_movie, ul_categorie) {
                     <img src=${response_json.image_url} alt="">
                 </div>
                 <div class="movie_modal_info_content">
-                    <h1><u>Title :</u> ${response_json.title}</h1>
+                    <p><u>Title :</u> ${response_json.title}</p>
                     <p><u>Genre :</u> ${response_json.genres}</p>
                     <p><u>Date published :</u> ${response_json.date_published}</p>
                     <p><u>Rated :</u> ${response_json.rated}</p>

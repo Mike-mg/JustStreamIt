@@ -91,9 +91,9 @@ nav img {
     color: white;
 }
 
-.infos h1 {
+/*.infos h1 {
     font-size: 40px;
-}
+}*/
 
 .modal {
     visibility: hidden;
@@ -370,7 +370,4 @@ nav img {
     max-width: 500px;
     min-height: 150px;
     margin: 25px;
-    font-size: 16px;
-
 }
-

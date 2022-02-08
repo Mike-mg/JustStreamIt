@@ -26,8 +26,6 @@ async function show_movies(url) {
             <p class="description">${movies_infos.description}</p>
             <a href="#modal">More infos</a>
         </div>
-
-
         <aside id="modal" class="modal">
             <div class="modal_content">
                 <div>
@@ -73,10 +71,8 @@ async function addElement (url_movie, ul_categorie) {
 
         let new_li = document.createElement('li');
         let img = `
-
         <img class="img_categorie" src=${response_json.image_url} alt="">
         <a href="#movie_modal${ul_categorie}${i}">More infos</a>
-
         <aside id="movie_modal${ul_categorie}${i}" class="movie_modal">
             <div class="div_movie_modal">
                 <div class="url_img">
